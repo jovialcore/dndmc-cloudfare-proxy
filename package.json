@@ -1,0 +1,15 @@
+{
+	"name": "dndmc-proxy",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev",
+		"test": "node --test"
+	},
+	"devDependencies": {
+		"wrangler": "^4"
+	},
+	"type": "module"
+}

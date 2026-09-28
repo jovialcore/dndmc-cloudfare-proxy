@@ -1,0 +1,22 @@
+{
+	"name": "dndmc-proxy",
+	"main": "src/index.js",
+	"compatibility_date": "2026-09-01",
+	"account_id": "3613cae74bd910072389762c04175e73",
+
+	"observability": {
+		"enabled": true,
+	},
+
+	// lets the Worker call Jev, billed to this account
+	"ai": { "binding": "AI" },
+
+	// 20 checks per minute per WordPress server
+	"ratelimits": [
+		{
+			"name": "SITE_LIMITER",
+			"namespace_id": "1001",
+			"simple": { "limit": 20, "period": 60 },
+		},
+	],
+}
